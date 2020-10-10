@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS DAY 2.Assign</title>
+</head>
+<body>
+	<h3 id="response">Awaiting response...</h3>
+
+
+	<script>
+		let yearOfBirth = prompt("Enter Year of Birth","YYY");
+		document.write(yearOfBirth);
+
+		let age = 2020-yearOfBirth;
+		alert(age);
+		let display = (age>= 18 && age <= 25 ? `You are ${age} years old and eligible to vote` : " Sorry you are below 18 and not eligible to vote on this platform ")
+		alert(display);
+		document.getElementById('response').innerHTML = display
+
+	</script>
+
+</body>
+</html>
+
+
